@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Negeri 1 Tanjung Pinang</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="50"> SMK Negeri 1 Tanjung Pinang
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="Gambar 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="Gambar 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Profil Sekolah -->
+    <section id="profil" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Profil Sekolah</h2>
+            <p>SMK Negeri 1 Tanjung Pinang merupakan sekolah unggulan dengan berbagai program keahlian...</p>
+        </div>
+    </section>
+
+    <!-- Berita -->
+    <section id="berita" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Berita Terbaru</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/berita1.jpg" class="card-img-top" alt="Berita 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul Berita 1</h5>
+                            <p class="card-text">Deskripsi singkat berita...</p>
+                            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/berita2.jpg" class="card-img-top" alt="Berita 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul Berita 2</h5>
+                            <p class="card-text">Deskripsi singkat berita...</p>
+                            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Kontak Kami</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3" placeholder="Masukkan pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
